@@ -1,11 +1,15 @@
 import './App.css'
 
+import Header from './components/Header/Header'
+
 function App() {
   return (
     <div className="App">
- 
-      <div className="content">
-      </div>
+      <Header />
+
+      <div className='content'></div>
+
+      <footer>Todos os direitos reservados ~ 2022</footer>
 
     </div>
   )
