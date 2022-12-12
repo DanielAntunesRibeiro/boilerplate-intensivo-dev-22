@@ -1,17 +1,18 @@
 import MarcaOcean from "../../assets/brand.svg";
+import "./Header.css"
 
 function Header(){
     return(
-        <header>
+        <header className="cabecalho">
             <div className="container">
               <div className='row align-items-center'>
                 <div className='col-2'>
                   <img src={MarcaOcean} alt="Ocean.ico" style={{height: 50}}/>
                 </div>
                 <div className='col-10'>
-                  <a>Link 1</a>
-                  <a>Link 2</a>
-                  <a>Link 3</a>
+                  <a className="link">Link 1</a>
+                  <a className="link">Link 2</a>
+                  <a className="link">Link 3</a>
                 </div>
               </div>
             </div>
