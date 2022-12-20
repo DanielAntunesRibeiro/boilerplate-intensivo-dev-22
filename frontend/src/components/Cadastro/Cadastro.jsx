@@ -17,7 +17,7 @@ function Cadastro() {
     },[])
 
     async function cadastraItem(event){
-        event.preventDefaut()
+        event.preventDefault()
 
         const formEl = event.target;
 
@@ -26,8 +26,8 @@ function Cadastro() {
         // criar o body da requisicao
         const body = {
             name: formEl.nome.value,
-            url: formEl.url.value,
-            categoria: formEl.categoria.value,
+            imageUrl: formEl.url.value,
+            category: formEl.categoria.value,
         };
 
         const request = await API.item.create(body);
